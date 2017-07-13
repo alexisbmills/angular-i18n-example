@@ -1,0 +1,39 @@
+<header>
+  <h2>Angular i18n</h2>
+  <div>
+    <ng-template ngFor let-lang [ngForOf]="languages">
+      <span *ngIf="lang.code !== localeId"><a href="/{{lang.code}}/" title="{{lang.label}}" class="i18n-link">{{lang.label}}</a> </span>
+      <span *ngIf="lang.code === localeId">{{lang.label}} </span>
+    </ng-template>
+  </div>
+</header>
+<div>
+  <h3 i18n="site header|Header title@@greetingTitle">Hello</h3>
+  <p i18n="site desc|A description@@siteDescription">Fill out form and click save to persist to localstorage, saving
+    state when changing language.</p>
+  <form [formGroup]="stateForm" (ngSubmit)="onSubmit()">
+    <div class="form-row first">
+      <label for="name" i18n="name input|Name input label@@inputName">Enter a name</label><br>
+      <input id="name" name="name" formControlName="name">
+    </div>
+    <div class="form-row">
+      <label for="dependents" i18n="dependents input|Dependents input label@@inputDependents">Number of
+        dependents</label><br>
+      <input id="dependents" name="dependents" type="number" formControlName="dependents">
+    </div>
+    <div class="form-row">
+      <button type="submit">
+        <ng-container i18n="save button|Save button label@@saveButtonLabel">Save</ng-container>
+      </button>
+    </div>
+
+    <h4 i18n="results header|Header for results@@resultsHeader">Results</h4>
+    <p><span i18n="name output|Name output label@@outputNameLabel">Name</span>: {{name}}</p>
+    <p><span i18n="dependents output|Name output label@@outputDependentsLabel">Dependents</span>: <span
+        i18n="@@outputDependentsValue">{
+      dependents,
+      plural,
+      =0 {None} =1 {Just one} =2 {A couple} =3 {A few} other {Too many :D}
+      }</span></p>
+  </form>
+</div>
