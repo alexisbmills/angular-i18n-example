@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" 
+  xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="siteDescription" datatype="html">
+        <source>Fill out form and click save to persist to localstorage, saving state when changing language.</source>
+        <target>Rellene el formulario y haga clic en guardar para persistir en localstorage, guardando el estado al cambiar el idioma.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\view-model\home\home.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">A description</note>
+        <note priority="1" from="meaning">site desc</note>
+      </trans-unit>
+      <trans-unit id="inputName" datatype="html">
+        <source>Enter a name</source>
+        <target>Ingresa un nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\view-model\home\home.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Name input label</note>
+        <note priority="1" from="meaning">name input</note>
+      </trans-unit>
+      <trans-unit id="inputDependents" datatype="html">
+        <source>Number of dependents</source>
+        <target>N&#xFA;mero de dependientes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\view-model\home\home.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Dependents input label</note>
+        <note priority="1" from="meaning">dependents input</note>
+      </trans-unit>
+      <trans-unit id="saveButtonLabel" datatype="html">
+        <source>Save</source>
+        <target>Salvar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\view-model\home\home.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Save button label</note>
+        <note priority="1" from="meaning">save button</note>
+      </trans-unit>
+      <trans-unit id="outputNameLabel" datatype="html">
+        <source>Name</source>
+        <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\view-model\home\home.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">Name output label</note>
+        <note priority="1" from="meaning">name output</note>
+      </trans-unit>
+      <trans-unit id="outputDependentsLabel" datatype="html">
+        <source>Dependents</source>
+        <target>Dependientes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\view-model\home\home.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Name output label</note>
+        <note priority="1" from="meaning">dependents output</note>
+      </trans-unit>
+      <trans-unit id="outputDependentsValue" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {None} =1 {Just one} =2 {A couple} =3 {A few} other {Too many :D} }</source>
+        <target>{VAR_PLURAL, plural, =0 {Ninguna} =1 {Solo uno} =2 {Una pareja} =3 {Unos pocos} other {Demasiados :D} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\view-model\home\home.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="greetingTitle" datatype="html">
+        <source>Hello</source>
+        <target>Hola</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\view-model\home\home.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Header title</note>
+        <note priority="1" from="meaning">site header</note>
+      </trans-unit>
+      <trans-unit id="resultsHeader" datatype="html">
+        <source>Results</source>
+        <target>Resultados</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app\view-model\home\home.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Header for results</note>
+        <note priority="1" from="meaning">results header</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
